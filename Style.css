@@ -1,0 +1,254 @@
+*{
+    margin:0;
+}
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    --background-image:url("bg3.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100%;
+}
+.header2{
+    background-color:#000000;
+    background-image: url("bg1.jpg");
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100%;
+
+    letter-spacing:-1px;
+    font-family: calibri light;
+    --font-size:70px;
+    
+    padding:40px;
+    padding-top:90px;
+    padding-left:px;
+    padding-bottom:50px;
+    border-bottom:5px solid black;
+
+    color:#000000;
+    transition-property:all;
+    transition-duration:0.5s;
+}
+.header2:hover{
+    background-color:rgba(0,0,0,.3);
+}
+
+.greet{
+    column-count: 2;
+    column-gap:50px;
+    
+    font-family:Calibri Light;
+    margin-top:40px;
+    opacity:1;
+}
+
+.gr{
+    --border:solid black;
+    color:white;
+    border-radius:20px;  
+    padding-bottom:20px;
+    margin-right:68%;
+    padding-left:20px;
+    padding-right:20px; 
+    background-color:#808080;
+    transition-property:all;
+    transition-duration:0.5s;
+}
+
+.gr a:visited{
+    color:white;
+}
+.gr:hover{
+    background-color:#404040;
+}
+
+.gr1{
+    --border:solid black;
+    color:white;
+    border-radius:20px;  
+    padding-bottom:20px;
+    padding-left:20px;
+    padding-right:20px;
+    --margin-left:40px; 
+    margin-right:62%;
+    background-color:#808080;
+    transition-property:all;
+    transition-duration:0.5s;
+}
+
+.gr1 a:visited{
+    color:white;
+}
+.gr1:hover{
+    background-color:#404040;
+}
+
+
+.grid{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.header3{
+    background-color:rgba(0,0,0,.4);
+    opacity:100%;
+    height:30px;
+    width:100%;
+    
+    border-width:5px;
+
+    z-index:12;
+    
+    position:fixed;
+    
+    
+    font-family:Montserrat light;
+    letter-spacing:3px;
+    font-size:17px;
+    word-spacing:5px;
+    font-weight:bolder;
+    
+    
+    padding-left:36%;
+    padding-top:14px;
+    padding-bottom:10px;
+}
+.origami{
+    --background-color:#ffffff;
+    margin-top:4%;
+    padding-bottom:30px;
+    padding-top:12px;
+    border: 5px solid white;
+    box-sizing: border-box;
+    font-family:Candara Light;
+
+    background: #fff;
+}
+
+.header3 a{
+    color:white;
+}
+.header3 a:visited:hover{
+    color:#005ac2;
+    text-decoration-line:underline
+}
+.header3 a:link:hover{
+    color:#005ac2;
+}
+a.header3:hover{
+    text-decoration:underline;
+}
+.footer{
+    height:300px;
+    background-image:url("footer.jpg") ;
+   
+    border-top: 5px solid transparent;
+    --border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    border-image-slice: 1;
+
+
+    font-weight:bold;
+}
+.footer a{
+    opacity:100%
+}
+.foooter a:hover{
+    opacity:100%
+}
+
+.fa {
+    display:block;
+    padding: 20px;
+    
+    --border:solid black;
+    font-size: 25px;
+    width: 20px;
+    height:20px;
+    text-align: center;
+    text-decoration: none;
+    --border-radius:200px;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+    border-radius:50;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-youtube{
+      background:#FF0000;
+      color:white;
+  }
+  .fa-linkedin{
+      color:white;
+    background:#0e76a8;
+  }
+  .copyright{
+      margin-top:2%;
+      color:gray;
+  }
+  .contact{
+      margin-top:80%
+  }
+.origami {
+    background: #fff;
+    padding: 30px;
+    position: relative;
+  }
+  
+  .origami,
+  .origami::before,
+  .origami::after {
+    /* Styles to distinguish sheets from one another */
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.25);
+    border: 1px solid #bbb;
+  }
+  
+  .origami::before,
+  .origami::after {
+    content: "";
+    position: absolute;
+    height: 95%;
+    width: 99%;
+    background-color: #eee;
+  }
+  
+  .origami::before {
+    right: 15px;
+    top: 0;
+    transform: rotate(-1deg);
+    z-index: -1;
+  }
+  
+  .origami::after {
+    top: 5px;
+    right: -5px;
+    transform: rotate(1deg);
+    z-index: -2;
+  }
+  
+  /*------------------------------------Steps.html---------------------------------*/
+.header1{
+    background-image:url("bg4.jpg");
+    color:"white";
+}
