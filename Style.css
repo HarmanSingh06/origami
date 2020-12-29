@@ -1,6 +1,7 @@
 *{
     margin:0;
 }
+
 html {
     scroll-behavior: smooth;
   }
@@ -30,7 +31,7 @@ body{
     padding-top:90px;
     padding-left:px;
     padding-bottom:50px;
-    border-bottom:5px solid black;
+    border-bottom:5px solid white;
 
     color:#000000;
     transition-property:all;
@@ -39,58 +40,6 @@ body{
 .header2:hover{
     background-color:rgba(0,0,0,.3);
 }
-
-.greet{
-    column-count: 2;
-    column-gap:50px;
-    
-    font-family:Calibri Light;
-    margin-top:40px;
-    opacity:1;
-}
-
-.gr{
-    --border:solid black;
-    color:white;
-    border-radius:20px;  
-    padding-bottom:20px;
-    margin-right:68%;
-    padding-left:20px;
-    padding-right:20px; 
-    background-color:#808080;
-    transition-property:all;
-    transition-duration:0.5s;
-}
-
-.gr a:visited{
-    color:white;
-}
-.gr:hover{
-    background-color:#404040;
-}
-
-.gr1{
-    --border:solid black;
-    color:white;
-    border-radius:20px;  
-    padding-bottom:20px;
-    padding-left:20px;
-    padding-right:20px;
-    --margin-left:40px; 
-    margin-right:62%;
-    background-color:#808080;
-    transition-property:all;
-    transition-duration:0.5s;
-}
-
-.gr1 a:visited{
-    color:white;
-}
-.gr1:hover{
-    background-color:#404040;
-}
-
-
 .grid{
     display:flex;
     flex-wrap:wrap;
@@ -102,11 +51,12 @@ body{
     height:30px;
     width:100%;
     
+    color:#db0d29;
     border-width:5px;
 
     z-index:12;
     
-    position:fixed;
+    position:absolute;
     
     
     font-family:Montserrat light;
@@ -120,11 +70,15 @@ body{
     padding-top:14px;
     padding-bottom:10px;
 }
+
 .origami{
     --background-color:#ffffff;
     margin-top:4%;
-    padding-bottom:30px;
+    margin-bottom:4%;
+    padding-bottom:20%;
     padding-top:12px;
+    margin-left:5%;
+    margin-right:5%;
     border: 5px solid white;
     box-sizing: border-box;
     font-family:Candara Light;
@@ -147,9 +101,8 @@ a.header3:hover{
 }
 .footer{
     height:300px;
-    background-image:url("footer.jpg") ;
    
-    border-top: 5px solid transparent;
+    background: linear-gradient(180deg, #1a1a1a 80%, #000000 20%);
     --border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
     border-image-slice: 1;
 
@@ -168,17 +121,30 @@ a.header3:hover{
     padding: 20px;
     
     --border:solid black;
-    font-size: 25px;
+    font-size: 17px;
     width: 20px;
     height:20px;
     text-align: center;
     text-decoration: none;
     --border-radius:200px;
+    --position:fixed;
+
+    z-index:5;
+    background-color: #333;
+    bottom: 0;
+    width: 22.89%;
+
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
   }
   
   /* Add a hover effect if you want */
   .fa:hover {
-    opacity: 0.7;
+   opacity: 0.7;
   }
   
   /* Set a specific color for each brand */
@@ -188,6 +154,7 @@ a.header3:hover{
     background: #3B5998;
     color: white;
     border-radius:50;
+    --position:fixed;
   }
   
   /* Twitter */
@@ -204,7 +171,7 @@ a.header3:hover{
     background:#0e76a8;
   }
   .copyright{
-      margin-top:2%;
+      margin-top:0.3%;
       color:gray;
   }
   .contact{
@@ -247,8 +214,145 @@ a.header3:hover{
     z-index: -2;
   }
   
-  /*------------------------------------Steps.html---------------------------------*/
-.header1{
-    background-image:url("bg4.jpg");
-    color:"white";
-}
+.btn{
+  display:block;
+    position: relative;
+    color: black;
+    font-size: 14px;
+    font-family: "montserrat";
+    text-decoration: none;
+    --margin: 30px 0;
+    --margin-left:23%;
+    --margin-bottom:5%;
+    border: 2px solid #ff7675;
+    padding: 14px 60px;
+    padding-left:5.5%;
+    padding-right:5.5%;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 1s all ease;
+    text-align:center;
+  }
+  .btn::before{
+    background: #ff7675;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    transition: all 0.4s ease;
+  }
+ 
+  .btn4::before{
+    width: 0%;
+    height: 100%;
+  }
+  
+  .btn4:hover::before{
+    width: 100%;
+  }
+  .btn1{
+    
+  }
+  .btn2{
+    --margin-left:10%;
+  }
+  .btns{
+    white-space: nowrap ;
+    display:block;
+  }
+  .child{
+    margin-right:70%;
+    padding-top:10%;
+    padding-bottom:10%;
+  }
+
+
+    .cater3-movingBG {
+      height: 100%;
+      background-image: url(bg1.jpg);
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-size: 125%;
+      background-repeat: repeat-x;
+      animation: animatedBackground 15s linear alternate infinite;
+  }
+  
+  @keyframes animatedBackground {
+      0% { background-position: 0 0; }
+      50% { background-position: 50% 0; }
+      100% { background-position: 0 0; }
+  }
+  
+  .flyinTxtCont {
+      height: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+      padding-bottom: 10%;
+        margin-left: 2em;
+        border-bottom:solid black 5px;
+  }
+  .flyIn {
+      color:#fff;
+      font-family:'Raleway';
+      text-transform:uppercase;
+      line-height:1.2em;
+      position:relative;
+    --text-shadow: 2px 2px 40px rgba(0,0,0,0.7);
+  }
+  .lineOne {
+    transition-delay:.2s; 
+    transition:.4s ease in;
+    animation: txtFlyIn .3s linear;
+  }
+  .lineTwo {
+      transition-delay:.4s; 
+      transition:.6s ease in;
+      animation: txtFlyIn .6s linear;
+  }
+  .lineThree {
+      transition-delay:.6s; 
+      transition:.8s ease in;
+      animation: txtFlyIn .9s linear;
+  }
+  .lineOne, .lineTwo, .lineThree {
+      font-size:110px;
+      font-weight: bold;
+      letter-spacing: 3px;
+    }
+  .lineFour {
+      transition-delay:2s; 
+      transition:2s ease in;
+      animation: fadeIn 2s linear;
+      width: 100%;
+      background-color:rgba(255,255,255,0.9);
+      display:inline-block;
+      color:#000;
+      max-width:63%;
+      max-width: 18em;
+      font-size: 32px;
+      padding: .2em .5em;
+      margin-top: 30px;
+  }
+  @keyframes fadeIn{
+      0% { opacity:0;}
+      100% { opacity:1;}
+  }
+  @keyframes txtFlyIn{
+      0% { transform:translateX(-100%); }
+      100% { transform:translateX(0%); }
+  }
